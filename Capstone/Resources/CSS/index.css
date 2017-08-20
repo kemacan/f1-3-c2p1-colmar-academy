@@ -1,0 +1,402 @@
+html {
+  font-family: Helvetica;
+  font-size: 16px;
+}
+
+/*CSS for Header*/
+/*Header title*/
+
+header {
+  height: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+header.title {
+  font-size: 1.5rem;
+  display: flex;
+  margin-left: 2.2rem;
+  padding: 1.7rem 0;
+
+}
+
+.title .dark {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.title .light {
+  font-size: 1.5rem;
+  color: #888888;
+  font-weight: 500;
+}
+
+header .title span img {
+  height: 48px;
+  margin-top: 10px;
+}
+
+
+header li {
+  display: inline;
+  margin-right: 0rem;
+  padding: 0.5rem 0.5rem
+  color: #4A4A4A;
+}
+
+header li:last-child {
+  margin-left: 0.5rem;
+  background-color: #2856B5;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  color: #fff;
+}
+
+.navmobile {
+  display: none;
+}
+
+/*Header Section - Mobile */
+
+@media only screen and (max-width: 768x) {
+  .navmobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navmobile img {
+    width: 32px;
+  }
+
+  .navtop {
+    display: none;
+  }
+}
+
+/* First Section */
+
+.FirstSection {
+  display: flex;
+  align-items: center;
+}
+
+.FirstSection img {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.learnnew {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.learnnew p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.startbutton {
+  background-color: #2855B5;
+  color: white;
+  text-align: center;
+  padding: 1rem 1rem;
+  border-radius: 100px;
+}
+
+/* First Section - Mobile */
+@media only screen and (max-width:960px) {
+  .FirstSection img {
+    width: 55%;
+  }
+  .learnnew {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  .learnnew p {
+    font-size: 1rem;
+  }
+  .startbutton {
+    padding: 0.75rem 0.5rem;
+    border-radius: 100px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .FirstSection {
+    flex-direction: column;
+    padding: 0;
+  }
+  .FirstSection img {
+    width: 100%;
+    height: 180px;
+    padding: 0rem;
+    object-fit: cover;
+    object-position: 0px 0px;
+  }
+  .learnnew {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Second Section */
+
+.SecondSection {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.practicing {
+  border-right: 1px solid #e3e3e3;
+  padding: 2rem 1.5rem;
+}
+
+.practicing img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.practicing h2 {
+  margin-bottom: 1.5rem;
+  color: blue;
+}
+
+.practicing p {
+  color: grey;
+  margin-bottom: 1rem;
+}
+
+.author {
+  color: grey;
+}
+
+/* Side Articles */
+
+.SideArticles {
+  display: flex;
+  flex-direction: column;
+  min-width: 423px;
+  margin-top: 1rem;
+}
+
+.article {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.article img.desktop {
+  width: 35%;
+  height: 35%;
+  margin-right: 1rem;
+}
+
+.article img.mobile {
+  display: none;
+}
+
+.article .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 1.5rem 0rem;
+}
+
+.content .heading {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #333333;
+}
+
+.content .text {
+  font-weight: lighter;
+  padding: 0.5rem 0;
+}
+
+.content .readmore {
+  line-height: 5;
+  color: darkblue;
+}
+
+/* Second Section Mobile */
+
+@media only screen and (max-width: 960px) {
+  .practicing h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .SecondSection {
+    display: none;
+  }
+  .SideArticles {
+    min-width: 100%;
+    margin-top: 0rem;
+  }
+  .article {
+    flex-direction: column;
+    border-bottom: none;
+    padding: 1rem 1rem 0rem 1rem;
+  }
+  .article img.desktop {
+    display: none;
+  }
+  .article img.mobile {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+  .article .content {
+    margin: 1rem 1rem;
+  }
+}
+
+/* Third Section */
+
+.Learning {
+  padding-top: 3rem;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+
+.Learning h2 {
+  margin: 0rem 0rem 3rem 0rem;
+  text-align: center;
+}
+
+.allsubjects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.subject {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 1rem 1.5em 1rem;
+  width: 26rem;
+  height: auto;
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+
+}
+
+.subject img {
+  margin: 0rem 0rem 2rem 0rem;
+  height: 220px;
+  object-fit: cover;
+  object-position: 0px 0px;
+}
+
+.subject .title {
+  margin-top: 1.1rem;
+  margin-left: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.subject .course {
+  margin: 0.5rem 1.1rem;
+}
+
+.subject .info {
+  margin-left: 1.1rem;
+  margin-bottom: 1.7rem;
+  line-height: normal;
+}
+
+/* Third Section - Mobile */
+
+@media only screen and (max-width: 550px) {
+  .Learning {
+    background-color: #ffffff;
+    padding: 2rem 0rem;
+    border-bottom: 1px solid #e3e3e3;
+  }
+
+  .Learning h2 {
+    font-size: 1.5rem;
+    margin: 0rem 0rem 2rem 0rem;
+  }
+  .allsubjects {
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem 1rem;
+    padding-bottom: 1rem;
+  }
+  .subject {
+    width: 100%;
+    background-color: #e3e3e3;
+    margin: 0rem 0rem 0.5rem 0rem;
+  }
+  .subject img {
+    display: none;
+  }
+  .subject .title {
+    padding: 1rem;
+    margin: 0;
+  }
+  .subject .course {
+    display: none;
+  }
+  .subject .info {
+    display: none;
+  }
+}
+
+/* Forth Section */
+
+.ForthSection {
+  padding-top: 3rem;
+  border: 1px solid #e3e3e3;
+}
+
+.thesiscontent {
+  display: flex;
+  justify-content: center;
+}
+
+.ForthSection h2 {
+  margin: 0rem 0rem 3rem 0rem;
+  text-align: center;
+}
+
+.video {
+  margin: 0rem 1rem 1.5rem 2rem;
+}
+
+.video video {
+  margin-bottom: 1.5rem;
+}
+
+.video h3 {
+  margin-bottom: 0.5rem;
+}
+
+.ForthSection .SideArticles {
+  margin-top: 0rem;
+}
+
+.ForthSection .article {
+  padding: 0rem 1rem 1rem 1rem;
+  border: none;
+}
+
+.ForthSection .article img {
+  width: 35%;
+  height: 35%;
+  margin-right: 1rem;
+}
+
+.ForthSection .article .content {
+  margin: 0rem 0rem;
+}
